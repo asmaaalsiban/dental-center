@@ -31,6 +31,7 @@ export default function Navbar() {
     { label: "من نحن؟", path: "/about" },
     { label: "أطبائنا", path: "/doctors" },
     { label: "تواصل معنا", path: "/contact" },
+    { label: "لوحة التحكم", path: "/dashboard" },
   ];
 
   return (
@@ -39,7 +40,7 @@ export default function Navbar() {
         sx={{
           position: "fixed",
           boxShadow: "0px 0px 10px gray",
-          direction: "ltr",
+          direction: "rtl",
         }}>
         <Toolbar>
           <Typography

@@ -1,4 +1,4 @@
-
+/** @format */
 
 #login-btn {
   transition: 0.3s;
@@ -18,12 +18,8 @@
   height: 100vh;
   position: relative;
 }
-.background-video {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.container-home::after {
+
+/* .container-home::after {
   content: "";
   position: absolute;
   width: 100%;
@@ -31,7 +27,7 @@
   left: 0;
   top: 0;
   background-color: #4944442e;
-}
+} */
 
 .content-home {
   position: absolute;
@@ -327,3 +323,14 @@
   min-height: 100vh;
 }
 /* End  login  */
+/* start dashdoard */
+.title-form{
+  text-align: center;
+}
+.container-add-doctor {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+}
+/* end dashdoard */

@@ -16,21 +16,31 @@ import Veneers from "./pages/services/Veneers";
 import DentalImplants from "./pages/services/DentalImplants";
 import LaserGumbeAutification from "./pages/services/LaserGumbeAutification";
 import RootCanalTreatment from "./pages/services/RootCanalTreatment";
+import Register from "./pages/Register";
+// Start Dashboard
+import Dashboard from "./pages/Dashboard/Dashboard";
+import AddingDoctor from "./pages/Dashboard/AddingDoctor";
+import Logs from "./pages/Dashboard/Logs";
 
+// End Dashboard
 import { Route, Routes } from "react-router-dom";
 export default function Rout() {
   return (
     <Routes>
       <Route path='/' element={<Home />} />
+      <Route path='/dashboard' element={<Dashboard />}>
+        <Route path='add-doctor' element={<AddingDoctor />} />
+        <Route path='Logs' element={<Logs />} />
+      </Route>
+
       <Route path='/login' element={<Login />} />
+      <Route path='/register' element={<Register />} />
       <Route path='/services' element={<Services />} />
       <Route path='/doctors' element={<Doctors />} />
       <Route path='/about' element={<About />} />
       <Route path='/contact' element={<Contact />} />
       <Route path='/Teeth-Whitening' element={<Teethwhitening />} />
-
       <Route path='/Orthodontics' element={<Orthodontics />} />
-
       <Route path='/PediatricDentistry' element={<PediatricDentistry />} />
       <Route path='/DentalProsthetics' element={<DentalProsthetics />} />
       <Route path='/Veneers' element={<Veneers />} />

@@ -13,6 +13,7 @@ import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import Routs from "./Routs";
+
 const theme = createTheme({
   palette: {
     primary: {

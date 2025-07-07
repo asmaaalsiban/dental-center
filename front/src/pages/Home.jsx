@@ -1,17 +1,15 @@
 /** @format */
 // Mui
-// import landing from "../images/bg_1.jpg";
+import landing from "../images/bg_1.jpg";
 import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 
-import Videobg from "../Video/video_2025-05-17_18-30-18.mp4";
+// import Videobg from "../Video/video_2025-05-17_18-30-18.mp4";
 import Services from "./Services";
 import About from "./About";
 import Doctors from "./Doctors";
 import Contact from "./Contact";
 import ModelAppointment from "./ModelAppointment";
-
-import React from "react";
 
 // hooks
 import { useState } from "react";
@@ -20,14 +18,27 @@ export default function Home() {
   return (
     <>
       <div className='container-home'>
-        <video
+        {/* <video
           src={Videobg}
           autoPlay
           loop
           muted
           playsInline
           className='background-video'
-        />
+        /> */}
+        <div
+          className='container-home'
+          style={{
+            position: "relative",
+            height: { xs: "60vh", md: "80vh" },
+            backgroundImage: `url(${landing})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+          }}></div>
         <div className='content-home'>
           <Typography
             variant='h3'
@@ -39,7 +50,7 @@ export default function Home() {
               position: "relative",
               zIndex: "10",
             }}>
-            .حياة أفضل تبدأ بابتسامة جميلة
+            حياة أفضل تبدأ بابتسامة جميلة
           </Typography>
           <Typography
             variant='h6'
@@ -51,9 +62,8 @@ export default function Home() {
               zIndex: "10",
               textAlign: "center",
             }}>
-            .احجز موعدك اليوم وابدأ رحلتك نحو ابتسامة أكثر إشراقًا
+            احجز موعدك اليوم وابدأ رحلتك نحو ابتسامة أكثر إشراقًا
           </Typography>
-
           <Button
             variant='contained'
             color='primary'
